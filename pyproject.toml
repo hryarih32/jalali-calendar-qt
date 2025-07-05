@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jalali-calendar-qt"
+dynamic = ["version"]
+authors = [ { name="Hamid R. Yari", email="hryarih32@gmail.com" } ]
+description = "A companion library providing PyQt (PySide6) widgets for the persian-jalali-calendar library."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+    "persian-jalali-calendar ~= 1.0",
+    "PySide6"
+]
+classifiers = [ ... ]
+
+[tool.setuptools]
+include-package-data = true 
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"jalali_calendar_qt" = ["assets/*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "jalali_calendar_qt.__version__" }
+
+[project.urls]
+"Homepage" = "https://github.com/hryarih32/jalali-calendar-qt"
+"Bug Tracker" = "https://github.com/hryarih32/jalali-calendar-qt/issues"
