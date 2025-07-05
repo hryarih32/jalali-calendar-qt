@@ -3,18 +3,30 @@ requires = ["setuptools>=61.0", "PySide6", "persian-jalali-calendar"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "persian-jalali-calendar-qt"
+name = "jalali-calendar-qt"
 version = "1.0.0"
-authors = [ { name="Hamid R. Yari", email="hryarih@gmail.com" } ]
+authors = [
+    { name="Hamid R. Yari", email="hryarih@gmail.com" },
+]
 description = "A companion library providing PyQt (PySide6) widgets for the persian-jalali-calendar library."
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.7"
 dependencies = [
-    "persian-jalali-calendar >= 1
+    "persian-jalali-calendar >= 1.0.2",
     "PySide6"
 ]
-keywords = ["jalali", "persian", "calendar", "shamsi", "qt", "pyside", "datepicker", "timepicker", "gui"]
+keywords = [
+    "jalali",
+    "persian",
+    "calendar",
+    "shamsi",
+    "qt",
+    "pyside",
+    "datepicker",
+    "timepicker",
+    "gui",
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -33,7 +45,7 @@ classifiers = [
 ]
 
 [tool.setuptools]
-include-package-data = true 
+include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["src"]
