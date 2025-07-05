@@ -1,3 +1,5 @@
+# jalali-calendar-qt/pyproject.toml
+
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
@@ -14,7 +16,30 @@ dependencies = [
     "persian-jalali-calendar ~= 1.0",
     "PySide6"
 ]
-classifiers = [ ... ]
+keywords = ["jalali", "persian", "calendar", "shamsi", "qt", "pyside", "datepicker", "timepicker", "gui"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+
+    "Intended Audience :: Developers",
+
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Software Development :: Widget Sets",
+
+    "License :: OSI Approved :: MIT License",
+    
+    "Framework :: Qt",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+
+    "Operating System :: OS Independent",
+]
 
 [tool.setuptools]
 include-package-data = true 
